@@ -12,8 +12,13 @@ You cannot assume the size of the array.
 You can assume that you do get an array and if the array is empty, return 0.
 */
 
-function sum (numbers) {
-    "use strict";
-    
-    
+const sum = (numbers) => {
+    let sum = 0
+    if(numbers.length === 0) {
+        return sum;
+    }    
+    for(let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum;
 };
